@@ -1,0 +1,284 @@
+[gd_scene load_steps=6 format=3 uid="uid://bb7jbbuaq8ich"]
+
+[ext_resource type="Script" uid="uid://b2c00koruh5eq" path="res://scenes/Main.gd" id="1_wuq2g"]
+[ext_resource type="Texture2D" uid="uid://ct0730xrvvcei" path="res://assets/images/01.png" id="2_nu2dp"]
+[ext_resource type="FontFile" uid="uid://cjojacwj4v6vh" path="res://assets/font/Ticketing.ttf" id="2_nxtc6"]
+[ext_resource type="FontFile" uid="uid://cjrvh1t7w2d8e" path="res://assets/font/Minercraftory.ttf" id="3_c01mt"]
+[ext_resource type="AudioStream" uid="uid://dxejjuieph7ms" path="res://assets/sounds/retro_correct.mp3" id="4_rarhs"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wuq2g")
+
+[node name="BG_ColorRect" type="ColorRect" parent="."]
+modulate = Color(0.901961, 0.905882, 0.909804, 1)
+self_modulate = Color(0.901961, 0.905882, 0.909804, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="AnswersList" type="ItemList" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -504.0
+offset_top = -256.0
+offset_right = 508.0
+offset_bottom = -84.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_hovered_color = Color(0.709804, 0.741176, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_nxtc6")
+theme_override_font_sizes/font_size = 36
+allow_reselect = true
+max_text_lines = 3
+auto_width = true
+text_overrun_behavior = 0
+item_count = 4
+same_column_width = true
+fixed_column_width = 1000
+item_0/text = "100000000000000000000000000"
+item_1/text = "2000000000000000000000000000000000000"
+item_2/text = "30000000000000000000000000000000"
+item_3/text = "40000000000000000000000000000"
+
+[node name="RestartButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -385.0
+offset_right = 100.0
+offset_bottom = -345.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_nxtc6")
+theme_override_font_sizes/font_size = 35
+text = "RESTART"
+
+[node name="RestartButtonAlways" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -125.0
+offset_top = -55.0
+offset_right = -18.0
+offset_bottom = -13.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_nxtc6")
+theme_override_font_sizes/font_size = 24
+text = "RESTART"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+clip_contents = true
+custom_minimum_size = Vector2(1280, 120)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -640.0
+offset_top = 13.0
+offset_right = 640.0
+offset_bottom = 133.0
+grow_horizontal = 2
+alignment = 1
+
+[node name="QuestionTexts" type="Label" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.501961, 0.772549, 1)
+theme_override_colors/font_shadow_color = Color(0.266667, 0.584314, 0.819608, 1)
+theme_override_fonts/font = ExtResource("2_nxtc6")
+theme_override_font_sizes/font_size = 40
+text = "Question Text"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ImageRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -612.5
+offset_top = 119.0
+offset_right = 612.5
+offset_bottom = 457.0
+grow_horizontal = 2
+texture = ExtResource("2_nu2dp")
+expand_mode = 2
+stretch_mode = 5
+
+[node name="WrongNumber" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -176.0
+offset_top = -37.0
+offset_right = 26.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.929412, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_nxtc6")
+theme_override_font_sizes/font_size = 35
+text = "Wrong"
+
+[node name="ScoreNumber" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -19.0
+offset_top = -38.0
+offset_right = 170.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_nxtc6")
+theme_override_font_sizes/font_size = 35
+text = "Score"
+
+[node name="CorrectAnswer" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -489.0
+offset_top = -175.0
+offset_right = 488.0
+offset_bottom = -119.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.133333, 0.133333, 0.133333, 1)
+theme_override_fonts/font = ExtResource("2_nxtc6")
+theme_override_font_sizes/font_size = 30
+text = "Correct answer:"
+horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="OK" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -162.5
+offset_top = -117.0
+offset_right = 170.5
+offset_bottom = -67.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_nxtc6")
+theme_override_font_sizes/font_size = 30
+text = "Alright! Next question."
+
+[node name="Correct" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -231.0
+offset_top = -117.0
+offset_right = 236.0
+offset_bottom = -67.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_nxtc6")
+theme_override_font_sizes/font_size = 30
+text = "Congratulations! You're correct."
+
+[node name="CorrectSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_rarhs")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(1280, 120)
+layout_mode = 0
+offset_top = 171.0
+offset_right = 1280.0
+offset_bottom = 585.0
+
+[node name="QuestionTexts" type="Label" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.501961, 0.772549, 1)
+theme_override_colors/font_shadow_color = Color(0.266667, 0.584314, 0.819608, 1)
+theme_override_fonts/font = ExtResource("3_c01mt")
+theme_override_font_sizes/font_size = 90
+text = "TEST YOUR"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuestionTexts2" type="Label" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.709804, 0.741176, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.219608, 0.705882, 0.286275, 1)
+theme_override_fonts/font = ExtResource("3_c01mt")
+theme_override_font_sizes/font_size = 60
+text = "CYBERSECURITY"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuestionTexts3" type="Label" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0.501961, 0.772549, 1)
+theme_override_colors/font_shadow_color = Color(0.266667, 0.584314, 0.819608, 1)
+theme_override_fonts/font = ExtResource("3_c01mt")
+theme_override_font_sizes/font_size = 70
+text = "KNOWLEDGE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PlayButton" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_nxtc6")
+theme_override_font_sizes/font_size = 30
+text = "PLAY"
+
+[node name="HelpButton" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_nxtc6")
+theme_override_font_sizes/font_size = 30
+text = "HELP"
+
+[node name="ExitButton" type="Button" parent="VBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_nxtc6")
+theme_override_font_sizes/font_size = 30
+text = "EXIT"
+
+[connection signal="item_selected" from="AnswersList" to="." method="_on_answers_list_item_selected"]
+[connection signal="pressed" from="RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="RestartButtonAlways" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="OK" to="." method="_on_ok_pressed"]
+[connection signal="pressed" from="Correct" to="." method="_on_correct_pressed"]
+[connection signal="pressed" from="VBoxContainer2/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="VBoxContainer2/HelpButton" to="." method="_on_help_button_pressed"]
+[connection signal="pressed" from="VBoxContainer2/ExitButton" to="." method="_on_exit_button_pressed"]

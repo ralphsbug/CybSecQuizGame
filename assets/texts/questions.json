@@ -1,0 +1,92 @@
+[
+	{
+		"imagePath": "res://assets/images/01.png",
+		"question": "What is the primary goal of a phishing attack?",
+		"options": ["To encrypt the victim’s files", "To steal sensitive information or credentials", "To physically damage the victim’s computer", "To improve the victim’s cybersecurity awareness"],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://assets/images/02.jpg",
+		"question": "Which of the following is a common red flag of a phishing\n email?",
+		"options": ["Urgent language demanding immediate action", "A legitimate company logo", "Proper grammar and spelling", "A known sender’s email address"],
+		"correctOptionIndex": 0
+	},
+	{
+		"imagePath": "res://assets/images/03.jpg",
+		"question": "What should you do if you receive a suspicious email\n asking for your password?",
+		"options": ["Reply with the requested information", "Forward it to your IT security team or report it as phishing", "Click on any links to verify the sender", "Ignore it but keep it in your inbox"],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://assets/images/04.png",
+		"question": "How does ransomware typically infect a system?",
+		"options": ["Through malicious email attachments or compromised websites", "By increasing internet speed", "Via automatic software updates from trusted vendors", "By improving system performance"],
+		"correctOptionIndex": 0
+	},
+	{
+		"imagePath": "res://assets/images/05.jpg",
+		"question": "What is the best way to prevent ransomware attacks?",
+		"options": ["Never backing up your files", "Regularly updating software and maintaining offline backups", "Sharing passwords with colleagues for convenience", "Disabling antivirus software"],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://assets/images/06.jpg",
+		"question": "What should you do if your computer is infected with\n ransomware?",
+		"options": ["Pay the ransom immediately", "Ignore it and continue working", "Restart the computer multiple times", "Disconnect from the network and report to IT security"],
+		"correctOptionIndex": 3
+	},
+	{
+		"imagePath": "res://assets/images/07.jpg",
+		"question": "What is a deepfake?",
+		"options": ["A type of malware that encrypts files", "AI-generated fake audio, video, or images designed to deceive", "A secure form of two-factor authentication", "A phishing email with perfect grammar"],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://assets/images/08.jpg",
+		"question": "How can deepfakes be used in cyber fraud?",
+		"options": ["To speed up computer performance", "To block ransomware attacks", "To impersonate executives and authorize fraudulent transactions", "To improve email encryption"],
+		"correctOptionIndex": 2
+	},
+	{
+		"imagePath": "res://assets/images/09.jpg",
+		"question": "What is a best practice to avoid falling for deepfake scams?",
+		"options": ["Verifying unusual requests through a separate communication channel","Trusting all video calls from superiors without verification", "Sharing personal information freely on social media", "Ignoring news about AI threats"],
+		"correctOptionIndex": 0
+	},
+	{
+		"imagePath": "res://assets/images/10.jpg",
+		"question": "Why is Multi-Factor Authentication (MFA) important?",
+		"options": ["It slows down login times unnecessarily", "It adds an extra layer of security beyond just passwordsp", "It replaces the need for strong passwords", "It only works for banking websites"],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://assets/images/11.jpg",
+		"question": "Which of the following is NOT an example of an Multi-Factor \nAuthentication (MFA) factor?",
+		"options": ["Something you know (password)", "Something you have (smartphone or token)", "Something you are (fingerprint or face scan)", "Something you guess (random attempts)"],
+		"correctOptionIndex": 3
+	},
+	{
+		"imagePath": "res://assets/images/12.jpg",
+		"question": "What should you do if you receive an unexpected Multi-Factor\n Authentication (MFA) approval request?",
+		"options": ["Approve it immediately to avoid login delays", "Share the code with a colleague", "Ignore it and try logging in later", "Deny it and report it as a potential breach"],
+		"correctOptionIndex": 3
+	},
+	{
+		"imagePath": "res://assets/images/13.jpg",
+		"question": "Which of the following is a POSITIVE security behavior?",
+		"options": ["Using the same password for multiple accounts", "Regularly updating software and using strong passwords", "Clicking on links in unsolicited emails", "Disabling firewall protections"],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://assets/images/14.jpg",
+		"question": "Which of the following is a NEGATIVE security behavior?",
+		"options": ["Locking your computer when stepping away", "Sharing your password with a coworker for convenience", "Reporting suspicious emails to IT", "Using a password manager"],
+		"correctOptionIndex": 1
+	},
+	{
+		"imagePath": "res://assets/images/15.jpg",
+		"question": "What is the safest way to handle sensitive documents?",
+		"options": ["Emailing them unencrypted to personal accounts", "Storing them only on a personal USB drive", "Using encrypted storage and secure sharing method", "Printing and leaving them on your desk"],
+		"correctOptionIndex": 2
+	}
+]

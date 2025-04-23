@@ -1,0 +1,186 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbosqt7oawy8g"]
+
+[ext_resource type="Script" uid="uid://dpc6tburfgv02" path="res://scenes/Help.gd" id="1_vtcus"]
+[ext_resource type="FontFile" uid="uid://cjojacwj4v6vh" path="res://assets/font/Ticketing.ttf" id="2_fihn4"]
+
+[node name="Help" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_vtcus")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+modulate = Color(0.901961, 0.905882, 0.909804, 1)
+self_modulate = Color(0.901961, 0.905882, 0.909804, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="ColorRect"]
+custom_minimum_size = Vector2(1280, 120)
+layout_mode = 0
+offset_top = 171.0
+offset_right = 1280.0
+offset_bottom = 585.0
+
+[node name="TestInstruct" type="RichTextLabel" parent="ColorRect/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.266667, 0.584314, 0.819608, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.501961, 0.772549, 1)
+theme_override_fonts/normal_font = ExtResource("2_fihn4")
+theme_override_fonts/mono_font = ExtResource("2_fihn4")
+theme_override_fonts/italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_font = ExtResource("2_fihn4")
+theme_override_font_sizes/bold_italics_font_size = 35
+theme_override_font_sizes/italics_font_size = 35
+theme_override_font_sizes/mono_font_size = 35
+theme_override_font_sizes/normal_font_size = 35
+theme_override_font_sizes/bold_font_size = 35
+bbcode_enabled = true
+text = "Test your cybersecurity knowledge with this quick 15-question challenge. 
+
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HowTo" type="RichTextLabel" parent="ColorRect/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.219608, 0.705882, 0.286275, 1)
+theme_override_colors/font_shadow_color = Color(0.709804, 0.741176, 0, 1)
+theme_override_fonts/normal_font = ExtResource("2_fihn4")
+theme_override_fonts/mono_font = ExtResource("2_fihn4")
+theme_override_fonts/italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_font = ExtResource("2_fihn4")
+theme_override_font_sizes/bold_italics_font_size = 35
+theme_override_font_sizes/italics_font_size = 35
+theme_override_font_sizes/mono_font_size = 35
+theme_override_font_sizes/normal_font_size = 35
+theme_override_font_sizes/bold_font_size = 35
+bbcode_enabled = true
+text = "How To Play:"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Instruct1" type="RichTextLabel" parent="ColorRect/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.341176, 0.372549, 0.396078, 1)
+theme_override_colors/font_shadow_color = Color(0.341176, 0.372549, 0.396078, 1)
+theme_override_fonts/normal_font = ExtResource("2_fihn4")
+theme_override_fonts/mono_font = ExtResource("2_fihn4")
+theme_override_fonts/italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_font = ExtResource("2_fihn4")
+theme_override_font_sizes/bold_italics_font_size = 35
+theme_override_font_sizes/italics_font_size = 35
+theme_override_font_sizes/mono_font_size = 35
+theme_override_font_sizes/normal_font_size = 35
+theme_override_font_sizes/bold_font_size = 35
+bbcode_enabled = true
+text = "1. READ THE QUESTION: Each question presents a cybersecurity scenario or concept. "
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Instruct1a" type="RichTextLabel" parent="ColorRect/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.341176, 0.372549, 0.396078, 1)
+theme_override_colors/font_shadow_color = Color(0.341176, 0.372549, 0.396078, 1)
+theme_override_fonts/normal_font = ExtResource("2_fihn4")
+theme_override_fonts/mono_font = ExtResource("2_fihn4")
+theme_override_fonts/italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_font = ExtResource("2_fihn4")
+theme_override_font_sizes/bold_italics_font_size = 35
+theme_override_font_sizes/italics_font_size = 35
+theme_override_font_sizes/mono_font_size = 35
+theme_override_font_sizes/normal_font_size = 35
+theme_override_font_sizes/bold_font_size = 35
+bbcode_enabled = true
+text = "2. SELECT YOUR ANSWER: Choose the best option from the choices provided."
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Instruct1b" type="RichTextLabel" parent="ColorRect/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.341176, 0.372549, 0.396078, 1)
+theme_override_colors/font_shadow_color = Color(0.341176, 0.372549, 0.396078, 1)
+theme_override_fonts/normal_font = ExtResource("2_fihn4")
+theme_override_fonts/mono_font = ExtResource("2_fihn4")
+theme_override_fonts/italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_font = ExtResource("2_fihn4")
+theme_override_font_sizes/bold_italics_font_size = 35
+theme_override_font_sizes/italics_font_size = 35
+theme_override_font_sizes/mono_font_size = 35
+theme_override_font_sizes/normal_font_size = 35
+theme_override_font_sizes/bold_font_size = 35
+bbcode_enabled = true
+text = "3. 15 CHALLENGES: There are 15 questions in total to test your skills.
+"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Instruct1c" type="RichTextLabel" parent="ColorRect/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.341176, 0.372549, 0.396078, 1)
+theme_override_colors/font_shadow_color = Color(0.341176, 0.372549, 0.396078, 1)
+theme_override_fonts/normal_font = ExtResource("2_fihn4")
+theme_override_fonts/mono_font = ExtResource("2_fihn4")
+theme_override_fonts/italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_font = ExtResource("2_fihn4")
+theme_override_font_sizes/bold_italics_font_size = 35
+theme_override_font_sizes/italics_font_size = 35
+theme_override_font_sizes/mono_font_size = 35
+theme_override_font_sizes/normal_font_size = 35
+theme_override_font_sizes/bold_font_size = 35
+bbcode_enabled = true
+text = "4. INSTANT FEEDBACK: After each answer, you'll see if you were correct and a brief explanation if needed."
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Instruct1d" type="RichTextLabel" parent="ColorRect/VBoxContainer2"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_colors/default_color = Color(0.341176, 0.372549, 0.396078, 1)
+theme_override_colors/font_shadow_color = Color(0.341176, 0.372549, 0.396078, 1)
+theme_override_fonts/normal_font = ExtResource("2_fihn4")
+theme_override_fonts/mono_font = ExtResource("2_fihn4")
+theme_override_fonts/italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_italics_font = ExtResource("2_fihn4")
+theme_override_fonts/bold_font = ExtResource("2_fihn4")
+theme_override_font_sizes/bold_italics_font_size = 35
+theme_override_font_sizes/italics_font_size = 35
+theme_override_font_sizes/mono_font_size = 35
+theme_override_font_sizes/normal_font_size = 35
+theme_override_font_sizes/bold_font_size = 35
+bbcode_enabled = true
+text = "5. YOUR SCORE: Once you finish all 15 questions, your final score will be displayed."
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BackButton" type="Button" parent="ColorRect/VBoxContainer2"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_fihn4")
+theme_override_font_sizes/font_size = 30
+text = "BACK"
+
+[connection signal="pressed" from="ColorRect/VBoxContainer2/BackButton" to="." method="_on_back_button_pressed"]

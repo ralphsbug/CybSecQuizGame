@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://bb7jbbuaq8ich"]
+[gd_scene load_steps=7 format=3 uid="uid://bb7jbbuaq8ich"]
 
 [ext_resource type="Script" uid="uid://b2c00koruh5eq" path="res://scenes/Main.gd" id="1_wuq2g"]
 [ext_resource type="Texture2D" uid="uid://ct0730xrvvcei" path="res://assets/images/01.png" id="2_nu2dp"]
 [ext_resource type="FontFile" uid="uid://cjojacwj4v6vh" path="res://assets/font/Ticketing.ttf" id="2_nxtc6"]
 [ext_resource type="FontFile" uid="uid://cjrvh1t7w2d8e" path="res://assets/font/Minercraftory.ttf" id="3_c01mt"]
 [ext_resource type="AudioStream" uid="uid://dxejjuieph7ms" path="res://assets/sounds/retro_correct.mp3" id="4_rarhs"]
+[ext_resource type="AudioStream" uid="uid://dk6bxjr6v4v4" path="res://assets/sounds/retro_wrong.wav" id="5_c01mt"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -218,6 +219,9 @@ text = "Congratulations! You're correct."
 
 [node name="CorrectSound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_rarhs")
+
+[node name="WrongSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_c01mt")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
 custom_minimum_size = Vector2(1280, 120)

@@ -10,6 +10,8 @@ extends Control
 @onready var CorrectAnswer = $CorrectAnswer
 @onready var OKButton = $OK
 @onready var Congratulation = $Correct
+@onready var StartMenu = $VBoxContainer2
+@onready var QuestionBox = $VBoxContainer
 
 var items: Array
 var item: Dictionary
@@ -19,6 +21,7 @@ var correct: float = 0
 var updatedCorrectAnswerIndex: int
 
 func _ready():
+	AudioPlayer.play_music_level()
 	items = read_json_file("res://assets/texts/questions.json")
 	items.shuffle()
 	show_beginning()
@@ -26,7 +29,7 @@ func _ready():
 	#displayScore()
 
 func show_beginning():
-	$VBoxContainer.hide()
+	QuestionBox.hide()
 	CorrectAnswer.hide()
 	OKButton.hide()
 	Congratulation.hide()
@@ -43,8 +46,8 @@ func displayScore():
 	ScoreNumber.text = "Score: " + str(int(correct))+"/"+str(items.size())
 
 func show_questions():
-	$VBoxContainer2.hide()
-	$VBoxContainer.show()
+	StartMenu.hide()
+	QuestionBox.show()
 	CorrectAnswer.hide()
 	OKButton.hide()
 	Congratulation.hide()
@@ -113,6 +116,7 @@ func show_correct_answer():
 	WrongNumber.show()
 	item = items[index_item]
 	CorrectAnswer.text = "Wrong! Correct answer:\n" + item.options[updatedCorrectAnswerIndex]
+	$WrongSound.play()
 	
 func show_congratulations():
 	AnswersList.hide()
